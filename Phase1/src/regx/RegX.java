@@ -2,7 +2,7 @@ package regx;
 
 import java.util.*;
 import java.util.regex.*;    
-public class RegEx{  
+public class RegX{  
     public static void main(String args[]){  
         ArrayList<String> emails = new ArrayList<String>();  
         emails.add("firstname@domain.com");  
@@ -25,5 +25,6 @@ public class RegEx{
             System.out.println("Email Id : " + email +" is valid = "+ matcher.matches()+"\n" );  
         } 
         System.out.println( "Mobile no is vaild = " + pattern.matches("\\d{10}" , "9173936889")+"\n");  
-        System.out.println( "Password is valid = " + pattern.matches("[SWA][a-z]+\\d{2}+[a-z0-9]+","Sbrahaspati231"));
-    }  }
+        System.out.println( "Password is valid = " + pattern.matches("[SWA][a-z]+\\d{2}+[a-z0-9]+","Yugals@123"));
+    }
+}
